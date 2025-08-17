@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0a018vu1n5vr"]
+
+[ext_resource type="PackedScene" uid="uid://dycbywoq0wcrb" path="res://Scenes/Menus/BaseMenu.tscn" id="1_bp0ux"]
+[ext_resource type="Script" uid="uid://bg1iu6qp65ww4" path="res://src/Menus/OptionsMenu.cs" id="2_60mby"]
+[ext_resource type="PackedScene" uid="uid://b8f35enk52eyd" path="res://Scenes/Buttons/BackButton.tscn" id="3_ohqpn"]
+
+[node name="OptionsMenu" instance=ExtResource("1_bp0ux")]
+script = ExtResource("2_60mby")
+
+[node name="BackButton" parent="." index="0" instance=ExtResource("3_ohqpn")]
+offset_left = 500.0
+offset_top = 450.0
+offset_right = 575.0
+offset_bottom = 485.0

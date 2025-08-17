@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxejr3whh0qut"]
+
+[ext_resource type="PackedScene" uid="uid://dhu5i6o0b7ooo" path="res://Scenes/Buttons/BaseButton.tscn" id="1_57h5i"]
+[ext_resource type="Script" uid="uid://dy4egr1mjq5mc" path="res://src/Buttons/PauseButton.cs" id="2_6x1xp"]
+
+[node name="PauseButton" instance=ExtResource("1_57h5i")]
+text = "Pause"
+script = ExtResource("2_6x1xp")

@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://fqvs5gydlwkx"]
+
+[ext_resource type="PackedScene" uid="uid://dhu5i6o0b7ooo" path="res://Scenes/Buttons/BaseButton.tscn" id="1_sosx6"]
+[ext_resource type="Script" uid="uid://d4m5sp5fkekkl" path="res://src/Buttons/ExitButton.cs" id="2_w6uo4"]
+
+[node name="ExitButton" instance=ExtResource("1_sosx6")]
+text = "Exit"
+script = ExtResource("2_w6uo4")

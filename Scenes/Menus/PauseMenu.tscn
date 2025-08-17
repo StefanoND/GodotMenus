@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://b68beks7p3ytt"]
+
+[ext_resource type="PackedScene" uid="uid://dycbywoq0wcrb" path="res://Scenes/Menus/BaseMenu.tscn" id="1_fwndu"]
+[ext_resource type="Script" uid="uid://dcyxe5c8ettv3" path="res://src/Menus/PauseMenu.cs" id="2_7unhi"]
+[ext_resource type="PackedScene" uid="uid://bkplylgk6tnsh" path="res://Scenes/Buttons/ResumeButton.tscn" id="3_gh0u6"]
+[ext_resource type="PackedScene" uid="uid://fqvs5gydlwkx" path="res://Scenes/Buttons/ExitButton.tscn" id="4_eyfc8"]
+[ext_resource type="PackedScene" uid="uid://bfn5578r36soo" path="res://Scenes/Buttons/OptionsButton.tscn" id="5_xiui8"]
+
+[node name="PauseMenu" instance=ExtResource("1_fwndu")]
+script = ExtResource("2_7unhi")
+
+[node name="ResumeButton" parent="." index="0" instance=ExtResource("3_gh0u6")]
+offset_left = 500.0
+offset_top = 150.0
+offset_right = 575.0
+offset_bottom = 185.0
+
+[node name="OptionsButton" parent="." index="1" instance=ExtResource("5_xiui8")]
+offset_left = 500.0
+offset_top = 300.0
+offset_right = 575.0
+offset_bottom = 335.0
+
+[node name="ExitButton" parent="." index="2" instance=ExtResource("4_eyfc8")]
+offset_left = 500.0
+offset_top = 450.0
+offset_right = 575.0
+offset_bottom = 485.0

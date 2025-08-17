@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://0an1wt33jts5"]
+
+[ext_resource type="Script" uid="uid://b65pey4vbjacm" path="res://src/Managers/MenuManager.cs" id="1_y7bnd"]
+[ext_resource type="PackedScene" uid="uid://dn1r1y8mqq5a1" path="res://Scenes/Menus/MainMenu.tscn" id="2_qiiaa"]
+[ext_resource type="PackedScene" uid="uid://b0a018vu1n5vr" path="res://Scenes/Menus/OptionsMenu.tscn" id="3_ymgi4"]
+[ext_resource type="PackedScene" uid="uid://b68beks7p3ytt" path="res://Scenes/Menus/PauseMenu.tscn" id="4_6fepr"]
+[ext_resource type="PackedScene" uid="uid://tejwopw3tdja" path="res://Scenes/Menus/InGameMenu.tscn" id="5_ymgi4"]
+
+[node name="MenuManager" type="Control" node_paths=PackedStringArray("_mainMenu", "_optionsMenu", "_inGameMenu", "_pauseMenu")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y7bnd")
+_mainMenu = NodePath("MainMenu")
+_optionsMenu = NodePath("OptionsMenu")
+_inGameMenu = NodePath("InGameMenu")
+_pauseMenu = NodePath("PauseMenu")
+
+[node name="MainMenu" parent="." instance=ExtResource("2_qiiaa")]
+visible = false
+
+[node name="OptionsMenu" parent="." instance=ExtResource("3_ymgi4")]
+visible = false
+
+[node name="PauseMenu" parent="." instance=ExtResource("4_6fepr")]
+visible = false
+
+[node name="InGameMenu" parent="." instance=ExtResource("5_ymgi4")]

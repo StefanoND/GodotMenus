@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfn5578r36soo"]
+
+[ext_resource type="PackedScene" uid="uid://dhu5i6o0b7ooo" path="res://Scenes/Buttons/BaseButton.tscn" id="1_dr2p0"]
+[ext_resource type="Script" uid="uid://deo8n8bw1nfmx" path="res://src/Buttons/OptionsButton.cs" id="2_o2fkx"]
+
+[node name="OptionsButton" instance=ExtResource("1_dr2p0")]
+text = "Options"
+script = ExtResource("2_o2fkx")

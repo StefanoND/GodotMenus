@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://tejwopw3tdja"]
+
+[ext_resource type="PackedScene" uid="uid://dycbywoq0wcrb" path="res://Scenes/Menus/BaseMenu.tscn" id="1_ra8e5"]
+[ext_resource type="PackedScene" uid="uid://dxejr3whh0qut" path="res://Scenes/Buttons/PauseButton.tscn" id="2_3caq3"]
+[ext_resource type="Script" uid="uid://dpxbortftdo03" path="res://src/Menus/InGameMenu.cs" id="2_y5se6"]
+
+[node name="InGameMenu" instance=ExtResource("1_ra8e5")]
+script = ExtResource("2_y5se6")
+
+[node name="PauseButton" parent="." index="0" instance=ExtResource("2_3caq3")]

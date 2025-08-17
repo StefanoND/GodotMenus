@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhu5i6o0b7ooo"]
+
+[ext_resource type="Script" uid="uid://cs3850vtml1lj" path="res://src/Buttons/BaseButton.cs" id="1_xplg1"]
+
+[node name="BaseButton" type="Button"]
+offset_top = 2.0
+offset_right = 75.0
+offset_bottom = 37.0
+text = "Button"
+script = ExtResource("1_xplg1")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

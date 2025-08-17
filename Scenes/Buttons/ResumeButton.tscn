@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://bkplylgk6tnsh"]
+
+[ext_resource type="PackedScene" uid="uid://dhu5i6o0b7ooo" path="res://Scenes/Buttons/BaseButton.tscn" id="1_u2vxq"]
+[ext_resource type="Script" uid="uid://dud8y2gy2sc3c" path="res://src/Buttons/ResumeButton.cs" id="2_p1p5f"]
+
+[node name="ResumeButton" instance=ExtResource("1_u2vxq")]
+text = "Resume"
+script = ExtResource("2_p1p5f")
