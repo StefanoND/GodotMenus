@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 MenuManager="*res://Scenes/Managers/MenuManager.tscn"
+GameManager="*res://Scenes/Managers/GameManager.tscn"
+GameState="*res://src/Enums/EGameState.cs"
 
 [display]
 
